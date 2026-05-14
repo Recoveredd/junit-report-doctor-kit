@@ -1,0 +1,62 @@
+{
+  "name": "junit-report-doctor-kit",
+  "version": "0.1.0",
+  "description": "Normalize JUnit XML reports with stable diagnostics.",
+  "keywords": [
+    "junit",
+    "report",
+    "doctor",
+    "xml",
+    "ci",
+    "test-report",
+    "diagnostics",
+    "typescript",
+    "browser",
+    "developer-tools"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "license": "MPL-2.0",
+  "author": "Recoveredd",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Recoveredd/junit-report-doctor-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Recoveredd/junit-report-doctor-kit/issues"
+  },
+  "homepage": "https://github.com/Recoveredd/junit-report-doctor-kit#readme",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "junit-report-doctor": "./dist/cli.js"
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepack": "npm run build",
+    "test": "vitest run --config vitest.config.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.6"
+  }
+}
