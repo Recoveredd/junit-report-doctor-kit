@@ -34,6 +34,10 @@ const report = parseJunitXml(xmlText);
 console.log(report.suites[0]?.cases[0]?.status);
 ```
 
+## Demo
+
+Try the browser preview: https://packages.wasta-wocket.fr/junit-report-doctor-kit/
+
 ## CLI
 
 ```bash
