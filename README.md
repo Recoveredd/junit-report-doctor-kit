@@ -1,5 +1,6 @@
 # junit-report-doctor-kit
 
+[![npm version](https://img.shields.io/npm/v/junit-report-doctor-kit.svg)](https://www.npmjs.com/package/junit-report-doctor-kit)
 [![License: MPL-2.0](https://img.shields.io/badge/license-MPL--2.0-blue.svg)](LICENSE)
 [![CI](https://github.com/Recoveredd/junit-report-doctor-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/Recoveredd/junit-report-doctor-kit/actions/workflows/ci.yml)
 
@@ -7,11 +8,8 @@ Normalize JUnit XML reports with stable diagnostics.
 
 `junit-report-doctor-kit` is a clean-room TypeScript package for CI tools that need to inspect JUnit-style XML before uploading it to Jenkins, GitLab, Azure DevOps, Testmo, or another report consumer. It keeps the v1 scope small: parse common `<testsuite>` and `<testsuites>` reports, normalize suites and cases, and explain common problems with stable diagnostic codes.
 
-## Publication status
 
-This package is currently a GitHub preview and is queued for npm publication. The browser demo is available now, and the install command below is the command to use once the npm package is published.
-
-## Install after npm publication
+## Install
 
 ```bash
 npm install junit-report-doctor-kit
